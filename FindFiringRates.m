@@ -1,11 +1,15 @@
 % connection strengths %default values 
 
-je0=[0.1:2:12.1];
-ji0=[0.1:2:12.1];
-jei=[0.1:2:12.1];
-jii=[0.1:2:12.1];
-jee=[0.1:2:12.1];
-jie=[0.1:2:12.1];
+j_dt = 0.5;
+j_max = 6;
+j_idx = 0.2:j_dt:j_max;
+
+je0=j_idx;
+ji0=j_idx;
+jei=j_idx;
+jii=j_idx;
+jee=j_idx;
+jie=j_idx;
 
 
 re=6;
@@ -80,12 +84,16 @@ toc
     
     mError=sum(Reabs,2)
     [~,idx]=sort(mError);
-    mError(idx,:)
-    Re(idx,:)
-    R(idx,:)
+    mError(idx,:);
+    Re(idx,:);
+    R(idx,:);
     js(idx,:);
     
-    R
+    R;
+
+
+Js_o = js(idx,:);
+Js_t  = Js_o(1,:);
     
 
 
