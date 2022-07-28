@@ -1,2 +1,5 @@
 *.mat
 .DS*
+folder/
+__pycache__/
+.ipynb_checkpoints/

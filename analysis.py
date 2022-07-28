@@ -6,7 +6,7 @@ import numpy as np
 import random
 import quantities as pq
 
-def rate_per_neuron(idx, time, duration):
+def rate_per_neuron(idx, duration):
 
     cells = np.unique(idx)
     rates = list()
